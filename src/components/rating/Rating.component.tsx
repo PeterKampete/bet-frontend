@@ -18,7 +18,7 @@ const Rating = ({ rating }: { rating: number }) => {
   const [selected, setSelected] = useState(5);
   return (
     <div className="flex gap-1">
-      {[...Array(rating)].map((n, i) => (
+      {[...Array(rating)].map((_, i) => (
         <Star
           key={i}
           onSelect={() => setSelected(i + 1)}
