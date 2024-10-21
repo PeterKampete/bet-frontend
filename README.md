@@ -1,50 +1,75 @@
-# React + TypeScript + Vite
+# Bet Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Bet-Frontend project! This is a responsive web application built to showcase my frontend development skills as part of a technical assessment for the Frontend Developer position. The project demonstrates the creation of a responsive webpage using modern tools and best practices.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+You can view the live version of the project here: Bet-Frontend Live Demo https://bet-frontend-3daw.onrender.com
 
-## Expanding the ESLint configuration
+## Project Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+he objective of this task was to build a responsive webpage based on a Figma design, tailored for mobile, tablet, and desktop views. The webpage ensures pixel-perfect accuracy and maintains a smooth, responsive layout across different screen sizes.
 
-- Configure the top-level `parserOptions` property like this:
+## Features
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Responsive Design**: Ensures a smooth, pixel-perfect experience across mobile, tablet, and desktop views.
+- **Component Reusability**: Components are cleanly structured and modular for ease of reuse.
+- **Storybook Integration**: Storybook is included to highlight the reusable components and showcase their different states.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Tools and Technologies
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **React.js**: The primary JavaScript library for building the UI components.
+- **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs.
+- **Vite**: A fast development environment and build tool for modern web applications.
+- **Storybook**: A development environment for UI components to build, test, and showcase them in isolation.
+- **Render**: Used to deploy the app as a static website for the live demo.
+- **GitHub**: The code repository for version control and collaboration.
+- **Jest and @testing-library/react**: The libraries for performing unit and integration testing.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Installation and Setup
+
+1. **Clone the Repository**
+   `git clone https://github.com/yourusername/bet-frontend.git ` <br>
+   `cd bet-frontend`. <br>
+
+2. **Install Dependencies**: Ensure you have Node.js installed, then run the following command to install the project dependencies:
+   `npm install`
+
+3. **Run the Development Server**: To start the development server, run: <br>
+   `npm run dev`
+
+This will open the project in your default browser on http://localhost:5173 (or another port depending on your environment).
+
+4. **Storybook**:
+
+- To view the Storybook components locally, run: `npm run storybook`
+
+Storybook will be available at http://localhost:6006
+
+- To create a production build, run: `npm run build-storybook`
+
+5. **Build for Production:** To generate a production build, run:
+
+`npm run build`
+
+## Storybook Integration
+
+- To view the Storybook components locally, run: `npm run storybook`. Storybook will be available at http://localhost:6006
+
+- To create a production build, run: `npm run build-storybook` and it will be ready for deployment.
+
+## Deployment
+
+The application is deployed on Render as a static website. You can access the live demo using the link above.
+
+## Design Approach
+
+- Responsive Design: I used Tailwind CSS for styling components and implementing responsiveness.
+- Component Reusability: I followed a modular approach, making the components reusable and scalable. Each component is self-contained with its styles and logic.
+- Separation of concerns of a component: Each component has types, story, and some have a test file for modularly storing the props, story component and unit testing logic.
+- Storybook Integration: I leveraged Storybook to showcase each component in isolation, making it easier to test and document component behavior.
+
+## 🔗 Links
+
+**Github Repository:** https://github.com/PeterKampete/bet-frontend
+**Live Link:** https://bet-frontend-3daw.onrender.com
