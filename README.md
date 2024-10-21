@@ -20,11 +20,13 @@ he objective of this task was to build a responsive webpage based on a Figma des
 
 - **React.js**: The primary JavaScript library for building the UI components.
 - **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs.
-- **Vite**: A fast development environment and build tool for modern web applications.
 - **Storybook**: A development environment for UI components to build, test, and showcase them in isolation.
 - **Render**: Used to deploy the app as a static website for the live demo.
 - **GitHub**: The code repository for version control and collaboration.
+- **CI/CD Pipeline**: Setup CI/CD pipeline with Github actions for monitoring code, proofing and continuous deployment.
 - **Jest and @testing-library/react**: The libraries for performing unit and integration testing.
+- **ES Lint**: Code quality check, formatting and enforcing best practices.
+- **Vite**: A fast development environment and build tool for modern web applications.
 
 ## Installation and Setup
 
