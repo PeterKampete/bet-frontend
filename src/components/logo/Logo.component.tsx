@@ -12,7 +12,7 @@ const Logo = ({ logoImage = logo, logoBgColor, className }: LogoProps) => {
   return (
     <div
       className={twMerge(
-        "justify-center items-center flex w-full",
+        "justify-center items-center flex w-full h-full",
         isTailwindBgClass(logoBgColor) ? logoBgColor : "",
         className
       )}

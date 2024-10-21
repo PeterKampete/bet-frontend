@@ -3,7 +3,7 @@ import cardData from "@/constants/cardData";
 
 const Landing = () => {
   return (
-    <main className="p-6 lg:p-[6.8125rem]">
+    <main className="p-6">
       <h3 className="font-bold font-Montserrat text-primaryGray mb-4">
         Best Casinos {new Date().getFullYear()}
       </h3>

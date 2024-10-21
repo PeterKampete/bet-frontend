@@ -29,7 +29,7 @@ const config: Config = {
         sm: "684px",
         md: "703px",
         lg: "900px",
-        xl: { max: "1220px" },
+        xl: "1220px",
       },
       boxShadow: {
         custom: "0px 0px 20px 0px rgba(0,0,0,0.1)",
